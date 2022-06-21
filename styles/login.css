@@ -13,7 +13,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 100vh;
-    background-color: #EF5454;
+    background-color:#eb1e00;
 }
 
 .login{
