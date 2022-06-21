@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.login-design{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
+    background-color: #EF5454;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-data{
+    width: 100%;
+    height: 80%;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.input-group{
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 1.5rem;
+
+}
+
+.input-filed input {
+    border: solid #575353 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+    padding-left: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.input-filed .input-label{
+    position: absolute;
+    top: -40px;
+    
+}
+
+.input-filed span{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 48px;
+    background-color: #EF5454;
+    border-top: solid #575353 1px;
+    border-bottom: solid #575353 1px;
+    border-left: solid #575353 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.login-form a{
+    display: block;
+    width: 85%;
+    text-align: left;
+    margin-top: 1.3rem;
+    margin-left: 25%;
+}
+
+.login-form{
+    margin-top: 20px;
+}
+
+.btn-login{
+    border-radius: 3px;
+    width: 25%;
+    border: none;
+    background-color: #EF5454;
+    color: #FFFFFF;
+    left: 63px;
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+    margin-left: 25%;
+
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 25%;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 130px;
+    margin-left: 120px;
+    color: #EF5454;
+}
+
+h2{
+    margin-top: 30px;
+    margin-left: 25%;
+}
+
+/* .images{
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    
+} */
+
+.iconos{
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+
+
+
+/* .images img{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 80%;
+    
+} */
+
+/* Swiper */
+/* html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+} */
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+
+.swiper-pagination{
+    margin-bottom: 90px;
+}
+
+.swiper-slide img {
+    display: block;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
