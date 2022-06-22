@@ -192,8 +192,9 @@ header{
 
 /*Categorias*/
 .categories{
-    background:var(--color-primary);
-    height:29rem;
+    background: rgb(61, 60, 60);
+    height:46rem;
+    margin-bottom: -1rem;
 }
 
 .categories h1{
@@ -221,7 +222,7 @@ header{
 }
 
 .category{
-    background:var(--color-bg2);
+    background:var(--color-white);
     padding:2rem;
     border-radius: 2rem;
     transition:var(--transition);
@@ -232,10 +233,35 @@ header{
     z-index: 1;
 }
 
-/*Aqui colores de los iconos*/
-.category:nth-child(2) .category__icon{
-    background:var(---color-danger);
+.categories__right  article h5,p{
+    color: black;
 }
+
+.descripcion{
+    color: white;
+}
+/*Aqui colores de los iconos*/
+.category:nth-child(1) .category__icon{
+    background:yellowgreen;
+}
+
+.category:nth-child(2) .category__icon{
+    background:orange;
+}
+
+.category:nth-child(3) .category__icon{
+    background:purple;
+}
+
+.category:nth-child(4) .category__icon{
+    background:rgb(180, 54, 75);
+}
+
+.category:nth-child(5) .category__icon{
+    background:aquamarine;
+}
+
+
 
 .category__icon{
     background: var(--color-primary);
@@ -249,96 +275,6 @@ header{
 
 .category p{
     font-size:0.85rem;
-}
-
-
-/*Recursos abiertos*/
-.courses h2{
-    color: var(--color-black);
-}
-
-.courses{
-    margin-top:10rem;
-}
-
-.courses__container{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:2rem;
-}
-
-.course{
-    background: var(--color-bg1);
-    text-align: center;
-    border:1px solid transparent;
-    transition:var(--transition);
-}
-
-.course:hover{
-    background: transparent;
-    border-color: var(--color-primary); 
-}
-
-.course__info{
-    padding:2rem;
-}
-
-.course__info p{
-    margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
-
-}
-
-/*Testimonios Avatar*/
-h5{
-    color:black;
-}
-small{
-    color:black;
-}
-.testimonials__container{
-    overflow-x: hidden;
-    position: relative;
-    margin-bottom:5rem;
-}
-
-.testimonial{
-    padding-top: 2rem;
-}
-
-.avatar{
-    width:6rem;
-    height:6rem;
-    border-radius:50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-}
-
-.testimonial__info{
-    text-align: center;
-}
-
-.testimonial__body{
-    background: var(--color-primary);
-    padding:2rem;
-    margin-top: 3rem;
-    position: relative;
-}
-
-.testimonial__body::before{
-    content: "";
-    display: block;
-    background:var(--color-primary);
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    left: 46%;
-    top:-1.5rem;
-    transform: rotate(45deg);
-}
-
-.container h2{
-    color: var(--color-black);
 }
 
 
@@ -384,3 +320,18 @@ footer ul li a:hover{
     border-top: 1px solid var(--color-white);
 }
 
+.vice{
+    font-size:2.4rem;
+    color:white;
+    font-weight:bold;
+}
+
+.descrip{
+    color:white;
+}
+
+.contact p{
+    font-size: 1rem;
+    color:white !important;
+    font-weight:bold;
+}
