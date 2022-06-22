@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.padre{
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    height: 100vh;
+}
+
+.top-box{
+    border: solid #d7dfe3 1px;
+    box-shadow: 0px 0px 20px #d7dfe3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 99%;
+    height: 35%;
+    
+}
+
+.top-box h1 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.bottom-box{
+    margin-top: 15%;
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 70%;
+    width: 99%;
+    border: solid #d7dfe3 1px;
+    box-shadow: 0px 0px 20px #d7dfe3;
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+}
+.filas{
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-bottom: solid #d7dfe3 1px;
+}
+
+.fila1 p{
+    position: absolute;
+    top: 95px;
+    left: 85px; 
+    font-size: 1.1rem;  
+}
+
+.filas p:hover{
+    text-decoration: underline;
+}
+
+.fila2 p{
+    position: absolute;
+    top: 140px;
+    left: 85px; 
+    font-size: 1.1rem;  
+}
+
+.fila3 p{
+    position: absolute;
+    top: 316px;
+    left: 85px; 
+    font-size: 1.1rem;  
+}
+
+.fila4 p{
+    position: absolute;
+    top: 365px;
+    left: 85px; 
+    font-size: 1.1rem;  
+}
+
+.fila5 p{
+    position: absolute;
+    top: 542px;
+    left: 85px; 
+    font-size: 1.1rem;  
+}
+
+
+.bottom-box span{
+    color: red;
+    font-size: 2.5rem;
+}
+
+
+.migaja {
+    display: flex;
+    align-items: center;
+    background-color: #F1F1F1;
+    min-height: 30px;
+    max-width: 25%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.migaja-columna{
+    margin-right: 27px;
+    position: relative;
+}
+
+.migaja-columna::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/right-arrow.png);
+    background-repeat: no-repeat;
+    top: 70%;
+    right: -20px;
+    transform: translateY(-80%);
+}
+
+.migaja-columna:last-child:after{
+    display: none;
+}
+
+.migajaitems {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.migaja-columna:last-child .migajaitems{
+    color: red;
+}
+
+.migaja-columna:not(:last-child) .migajaitems:hover{
+    text-decoration: underline;
+}
+
