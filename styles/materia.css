@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    list-style: none;
+    
 }
 
 body{
@@ -11,8 +13,55 @@ body{
 
 .padre{
     display: grid;
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(4, 25%);
     height: 100vh;
+}
+
+.headertop{
+    width:100%;
+    height: 5rem;
+    position: fixed;
+    background: #eb1e00;
+}
+
+.headertop a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left:190px;
+    max-width: 80%;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 .top-box{
@@ -22,7 +71,7 @@ body{
     margin-right: auto;
     margin-top: 5%;
     width: 99%;
-    height: 35%;
+    height: 70%;
     
 }
 
@@ -32,17 +81,17 @@ body{
 }
 
 .bottom-box{
-    margin-top: 15%;
-    position: absolute;
+    margin-top: 2.5%;
     margin-left: 10px;
     margin-right: 10px;
-    height: 70%;
+    height: 400%;
     width: 99%;
     border: solid #d7dfe3 1px;
     box-shadow: 0px 0px 20px #d7dfe3;
     display: grid;
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);   
 }
+
 .filas{
     text-align: left;
     margin-left: 40px;
@@ -51,43 +100,87 @@ body{
     border-bottom: solid #d7dfe3 1px;
 }
 
-.fila1 p{
-    position: absolute;
-    top: 95px;
-    left: 85px; 
-    font-size: 1.1rem;  
-}
-
 .filas p:hover{
     text-decoration: underline;
 }
 
+.fila1{
+    display: flex;
+    max-height: 18%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.filas span{
+    height: 45px;
+    padding: 0;
+}
+
+
+.fila1 p{
+    font-size: 1.1rem;
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+
+.fila2{
+    display: flex;
+    max-height: 18%;
+    padding: 0;
+    margin: 0;
+}
+
 .fila2 p{
-    position: absolute;
-    top: 140px;
-    left: 85px; 
-    font-size: 1.1rem;  
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+
+.fila3{
+    top: 100px;
+    display: flex;
+    max-height: 18%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .fila3 p{
-    position: absolute;
-    top: 316px;
-    left: 85px; 
-    font-size: 1.1rem;  
+    font-size: 1.1rem;
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 6px; 
+}
+
+.fila4{
+    top: 100px;
+    display: flex;
+    max-height: 18%;
+    padding: 0;
+    margin: 0;
 }
 
 .fila4 p{
-    position: absolute;
-    top: 365px;
-    left: 85px; 
-    font-size: 1.1rem;  
+    font-size: 1.1rem;
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 6px;  
+}
+
+.fila5{
+    top: 100px;
+    display: flex;
+    max-height: 18%;
+    padding: 0;
+    margin: 0;
 }
 
 .fila5 p{
-    position: absolute;
-    top: 542px;
-    left: 85px; 
-    font-size: 1.1rem;  
+    font-size: 1.1rem;
+    height: 100%;
+    margin-left: 3px;
+    margin-top: 6px; 
 }
 
 
@@ -143,5 +236,105 @@ body{
 
 .migaja-columna:not(:last-child) .migajaitems:hover{
     text-decoration: underline;
+}
+
+
+footer{
+    background-color:#eb1e00;
+    padding-top: 5rem;
+    font-size:0.9rem;
+    margin-top: 1000px;
+    width: 100%;
+    height: 164%;
+}
+
+.footer__container{
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: -40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 230px;
+    justify-content: center;
+    align-items: center;
+
+}
+.vice {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer__container li a{
+    font-weight:600;
+    color: white;
+}
+
+.footer__colums{
+    max-width: 300px;
+    
+}
+
+.footer__container > div h4{
+    margin-bottom:1.2rem;
+}
+
+.footer_1 p{
+    margin:1rem 0 2rem;
+    
+}
+
+footer ul li{
+    margin-bottom:0.7rem;
+
+}
+
+footer ul li a:hover{
+    text-decoration:underline;
+}
+
+.footer__socials{
+    display: flex;
+    gap:1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer__copyright{
+    text-align:center;
+    margin-top:4rem;
+    padding:1.2rem 0;
+    border-top: 1px solid white;
+    
+}
+
+.vice{
+    font-size:2.4rem;
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+h4 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.descrip{
+    color:white;
+}
+
+.contact p{
+    font-size: 1rem;
+    color:white;
+    font-weight:bold;
+}
+
+.footer__copyright{
+    text-align:center;
+    margin-top:3.9rem;
+    padding:1.2rem 0;
+    border-top: 1px solid white;
+    color: white;
 }
 

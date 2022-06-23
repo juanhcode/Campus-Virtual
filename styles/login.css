@@ -61,7 +61,7 @@ body{
     left: 0px;
     width: 50px;
     height: 48px;
-    background-color: #EF5454;
+    background-color: #eb1e00;
     border-top: solid #575353 1px;
     border-bottom: solid #575353 1px;
     border-left: solid #575353 1px;
@@ -89,7 +89,7 @@ body{
     border-radius: 3px;
     width: 25%;
     border: none;
-    background-color: #EF5454;
+    background-color: #eb1e00;
     color: #FFFFFF;
     left: 63px;
     line-height: 2.6rem;
@@ -107,7 +107,7 @@ body{
     position: absolute;
     top: 130px;
     margin-left: 120px;
-    color: #EF5454;
+    color: #eb1e00;
 }
 
 h2{
